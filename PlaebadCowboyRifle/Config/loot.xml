@@ -1,0 +1,22 @@
+<PlaebadCowboyRifle>
+
+	<!-- Add item to T2 ranged weapon quest group -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsRangedT2']/item[@name='gunRifleT2LeverActionRifle']">
+		<item name="gunRifleT2PlaebadCowboy"/>
+	</insertAfter>
+	
+	<!-- Add item bundle to quest rewards -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestT2Firearms']/item[@name='questRewardT2RifleBundle']">
+		<item name="questRewardT2CowboyRifleBundle"/>
+	</insertAfter>
+	
+	<!-- Add schematic -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']/item[@name='gunRifleT2LeverActionRifleSchematic']">
+			<item name="gunRifleT2PlaebadCowboySchematic"/>
+	</insertAfter>
+	
+	<!-- Add item to Deadeye perk weapon group -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_DeadEye']/item[@name='gunRifleT2LeverActionRifle']">
+		<item name="gunRifleT2PlaebadCowboy"/>
+	</insertAfter>
+</PlaebadCowboyRifle>
