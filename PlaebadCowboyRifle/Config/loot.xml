@@ -11,9 +11,9 @@
 	</insertAfter>
 	
 	<!-- Add schematic -->
-	<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']/item[@name='gunRifleT2LeverActionRifleSchematic']">
+	<!-- <insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']/item[@name='gunRifleT2LeverActionRifleSchematic']">
 			<item name="gunRifleT2PlaebadCowboySchematic"/>
-	</insertAfter>
+	</insertAfter> -->
 	
 	<!-- Add item to Deadeye perk weapon group -->
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_DeadEye']/item[@name='gunRifleT2LeverActionRifle']">
