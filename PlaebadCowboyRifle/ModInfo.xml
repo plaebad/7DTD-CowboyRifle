@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
-		<Name value="PlaebadCowboyRifle" />
-		<Description value="Adds a new Lever Action rifle using .44 ammo" />
-		<Author value="Plaebad" />
-		<Version value="1.0.0" />
-		<Website value="" />
-	</ModInfo>
+	<Name value="PlaebadCowboyRifle" />
+	<DisplayName value="Plaebad Cowboy Rifle" />
+	<Description value="Adds a new Lever Action rifle using .44 ammo" />
+	<Author value="Plaebad" />
+	<Version value="2.0.0" />
+	<Website value="" />
 </xml>

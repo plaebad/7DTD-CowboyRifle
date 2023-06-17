@@ -1,12 +1,12 @@
 <PlaebadCowboyRifle>
 
 	<!-- Add schematic to trader rare books group -->
-	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']/item[@name='gunRifleT2LeverActionRifleSchematic']">
+	<!-- <insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']/item[@name='gunRifleT2LeverActionRifleSchematic']">
 		<item name="gunRifleT2PlaebadCowboySchematic"/>
-	</insertAfter>
+	</insertAfter> -->
 	
 	<!-- Add item to trader weapons group -->
-	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='weaponsGunsT2']/item[@name='gunRifleT2LeverActionRifle']">
-		<item name="gunRifleT2PlaebadCowboy" quality="2,3"/>
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']/item[@name='gunRifleT2LeverActionRifle']">
+		<item name="gunRifleT2PlaebadCowboy" quality="2,5"/>
 	</insertAfter>
 </PlaebadCowboyRifle>

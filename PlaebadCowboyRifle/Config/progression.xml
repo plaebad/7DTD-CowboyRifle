@@ -1,16 +1,26 @@
 <PlaebadLeverAction44Progression>
 
+	<!-- Unlock 44 Lever Action crafting via crafting skill -->
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/display_entry[@item='gunRifleT2LeverActionRifle']">
+		<display_entry item="gunRifleT2PlaebadCowboy" unlock_level="27,35,43,51,59" />
+	</insertAfter>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="gunRifleT2PlaebadCowboy"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunRifleT2PlaebadCowboy"/>
+	</append>
+
     <!-- Enable applicable Magnum Enforcer book perks for the Lever Action Rifle -->
 
     <!-- Book 1: 10 pct more damage -->
-    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerDamage']/effect_group[1]">
+    <insertAfter xpath="/progression/perks/book[@name='perkEnforcerDamage']/effect_group[1]">
         <effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.1" tags="rifle44"/>
 		</effect_group>
     </insertAfter>
 
     <!-- Book 3: Last shot double damgae -->
-    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerPunks']/effect_group[1]">
+    <insertAfter xpath="/progression/perks/book[@name='perkEnforcerPunks']/effect_group[1]">
         <effect_group>
 			<requirement name="RoundsInMagazine" operation="LTE" value="0"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="1" tags="rifle44"/>
@@ -18,7 +28,7 @@
     </insertAfter>
 
     <!-- Book 4: 5 pct barter bonus -->
-    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerIntimidation']/effect_group[1]">
+    <insertAfter xpath="/progression/perks/book[@name='perkEnforcerIntimidation']/effect_group[1]">
         <effect_group>
 			<requirement name="ItemHasTags" tags="rifle44"/>
 				<passive_effect name="BarteringBuying" operation="base_add" level="1" value="0.05"/>
@@ -27,7 +37,7 @@
     </insertAfter>
 
     <!-- Book 7: 20 pct less stamina sprinting in combat -->
-    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerCriminalPursuit']/effect_group[1]">
+    <insertAfter xpath="/progression/perks/book[@name='perkEnforcerCriminalPursuit']/effect_group[1]">
         <effect_group>
 			<requirement name="ItemHasTags" tags="rifle44"/>
 			<requirement name="ProgressionLevel" progression_name="perkEnforcerCriminalPursuit" operation="Equals" value="1"/>
@@ -36,7 +46,7 @@
     </insertAfter>
 
     <!-- Series completion bonus: Shot penetration and bulk unlock -->
-    <insertAfter xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group[1]">
+    <insertAfter xpath="/progression/perks/book[@name='perkEnforcerComplete']/effect_group[1]">
         <effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle44MagnumBulletAP,ammoBundle44MagnumBulletHP,ammoBundle44MagnumBulletBall"/>
 		</effect_group>
